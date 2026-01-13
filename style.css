@@ -151,6 +151,88 @@ main * {
     margin: 30px 0;
 }
 
+.feature-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+}
+
+.feature-content {
+    max-width: 586px;
+}
+
+.feature-right img {
+    width: 100%;
+}
+
+.feature-title {
+    color: #131313;
+    font-size: 2.7rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-desc {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 35px 0;
+}
+
+.feature-card {
+    padding: 30px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+    margin-top: 20px;
+}
+
+.card-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 1rem;
+    color: #727272;
+    line-height: 1.5rem;
+}
+
+#badge {
+    padding: 46px 42px;
+    background-color: #FF900E;
+    /* margin-top: -20px;
+    margin-left: -100px; */
+    position: absolute;
+    bottom: -65px;
+    left: -55px;
+    border-radius: 8px;
+}
+
+.feature-right {
+    position: relative;
+}
+
+.feature-right img {
+    width: 100%;
+}
+
+.feature-year {
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.feature-exp {
+    font-size: 1.5rem;
+    color: white;
+}
+
 /* Responsive */
 /* Max-width:576px */
 
@@ -186,6 +268,28 @@ main * {
         flex-direction: column;
         gap: 35px;
     }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap: 100px;
+    }
+
+    #badge {
+        position: absolute;
+        text-align: center;
+        bottom: -60px;
+        left: 60px;
+        padding: 30px;
+    }
+
+    .feature-exp {
+        font-size: 1rem;
+    }
+
+    .feature-year {
+        font-size: 2rem;
+    }
 }
 
 /* Min-width:576px ans Max-width:768px */
@@ -217,6 +321,20 @@ main * {
         flex-direction: column;
         gap: 30px;
     }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap: 100px;
+    }
+
+    #badge {
+        position: absolute;
+        text-align: center;
+        bottom: -60px;
+        left: 85px;
+        padding: 30px;
+    }
 }
 
 /* Min-width:768px ans Max-width:992px */
@@ -233,5 +351,40 @@ main * {
     .team {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-container {
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap: 100px;
+    }
+
+    #badge {
+        text-align: center;
+        bottom: -60px;
+        left: 60px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .feature-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+    }
+
+    #badge {
+        text-align: center;
+        bottom: -100px;
+        left: 100px;
+    }
+
+    .feature-exp {
+        font-size: 1.3rem;
+    }
+
+    .feature-year {
+        font-size: 2rem;
     }
 }
