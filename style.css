@@ -154,7 +154,7 @@ main * {
 .feature-container {
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 135px;
 
 }
 
@@ -210,7 +210,7 @@ main * {
     margin-left: -100px; */
     position: absolute;
     bottom: -65px;
-    left: -55px;
+    left: -90px;
     border-radius: 8px;
 }
 
@@ -231,6 +231,100 @@ main * {
 .feature-exp {
     font-size: 1.5rem;
     color: white;
+}
+
+.fact-card {
+    padding: 45px 36px 60px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fact-number {
+    font-size: 2.7rem;
+    color: #424242;
+    font-weight: 600;
+}
+
+.display-block {
+    display: block;
+    margin: 10px 0;
+}
+
+.fact-card-desc {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.fact-container {
+
+    margin-top: 130px;
+}
+
+.fact-card-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.fact-title {
+    font-size: 2.7rem;
+    color: #131313;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.fact-desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #727272;
+
+}
+
+.sponsor-logo {
+    gap: 154px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    margin-top: 50px;
+}
+
+.sponsor-logo img {
+    margin: 0;
+}
+
+.sponsor-title {
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #131313;
+    margin-bottom: 24px;
+}
+
+.sponsor {
+    margin-top: 130px;
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.sponsor-desc {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 560px;
+}
+
+footer {
+    max-width: 1440px;
+    margin: auto;
+    padding: 39px 0;
+    text-align: center;
+    background-color: #FFF4E7;
+    color: #424242;
+    font-size: 1.25rem;
 }
 
 /* Responsive */
@@ -290,6 +384,30 @@ main * {
     .feature-year {
         font-size: 2rem;
     }
+
+    .fact-card-container {
+        flex-direction: column;
+        margin-top: 45px;
+
+    }
+
+    .fact-container {
+        margin-top: 32px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .fact-card {
+        width: 100%;
+    }
+
+    .sponsor-logo {
+        gap: 35px;
+    }
+
+    .sponsor {
+        padding: 30px;
+    }
 }
 
 /* Min-width:576px ans Max-width:768px */
@@ -335,6 +453,28 @@ main * {
         left: 85px;
         padding: 30px;
     }
+
+    .fact-container {
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .fact-card-container {
+        flex-direction: column;
+    }
+
+    .fact-card {
+        width: 80%;
+    }
+
+    .sponsor-logo {
+        gap: 90px;
+    }
+
+    .sponsor {
+        padding: 30px;
+    }
 }
 
 /* Min-width:768px ans Max-width:992px */
@@ -365,6 +505,28 @@ main * {
         left: 60px;
         padding: 30px;
     }
+
+    .fact-container {
+        padding: 30px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .fact-card-container {
+        flex-direction: column;
+    }
+
+    .fact-card {
+        width: 80%;
+    }
+
+    .sponsor-logo {
+        gap: 105px;
+    }
+
+    .sponsor {
+        padding: 30px;
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -386,5 +548,15 @@ main * {
 
     .feature-year {
         font-size: 2rem;
+    }
+
+    .fact-card-container {
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+
+    .fact-container {
+        padding: 30px;
+        margin-top: 70px;
     }
 }
